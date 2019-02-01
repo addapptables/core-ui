@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@addapptables/core": [
+        "dist/addapptables/core"
+      ],
+      "@addapptables/core/*": [
+        "dist/addapptables/core/*"
+      ]
+    }
   }
 }

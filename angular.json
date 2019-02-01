@@ -2,5 +2,42 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
-  "projects": {}
+  "projects": {
+    "@addapptables/core": {
+      "root": "projects/addapptables/core",
+      "sourceRoot": "projects/addapptables/core/src",
+      "projectType": "library",
+      "prefix": "addapptable",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/addapptables/core/tsconfig.lib.json",
+            "project": "projects/addapptables/core/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/addapptables/core/src/test.ts",
+            "tsConfig": "projects/addapptables/core/tsconfig.spec.json",
+            "karmaConfig": "projects/addapptables/core/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/addapptables/core/tsconfig.lib.json",
+              "projects/addapptables/core/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "@addapptables/core"
 }

@@ -1,0 +1,25 @@
+{
+  "name": "@addapptables/core",
+  "version": "0.0.1",
+  "author": "Addapptables",
+  "description": "addapptable core library for angular",
+  "license": "MIT",
+  "homepage": "https://github.com/addapptables/core-ui",
+  "peerDependencies": {
+    "@angular/common": ">= 7.0.0 < 8.0.0",
+    "@angular/core": ">= 7.0.0 < 8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/addapptables/core-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/addapptables/core-ui/issues"
+  },
+  "keywords": [
+    "angular",
+    "angular 2",
+    "core",
+    "addapptables"
+  ]
+}
